@@ -45,7 +45,7 @@ public class MyService extends Service {
 		public void onReceive(Context context, Intent intent) {
 			String action = intent.getAction();
 			Log.v("tt", "action: " + action);
-			if (action.equals(Intent.ACTION_USER_PRESENT)) {
+			if (action.equals(Intent.ACTION_SCREEN_ON)) {
 				if (bAdapter.isEnabled()) {
 					bAdapter.disable();
 				} else {
